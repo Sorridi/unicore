@@ -1,0 +1,5 @@
+name: unicore
+version: ${project.version}
+author: Sorridi
+main: xyz.sorridi.unicore.UniCore
+api-version: 1.13
