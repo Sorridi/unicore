@@ -123,9 +123,8 @@ public class PlayerEvents implements Listener {
 
         StringFormat.sendFormattedPrefix(player,
                 (broken == 1 ? "E' stato scavato" : "Sono stati scavati")
-                        + " &b" + broken + " &fblocc" + (broken == 1 ? "o" : "hi")
-                        + " di " + (miningOres ? WorldUtils.getColor(material) : "&6") + material
-        );
+                + " &b" + broken + " &fblocc" + (broken == 1 ? "o" : "hi") + " di "
+                + (miningOres ? WorldUtils.getColor(material) : "&6") + material);
     }
 
 }

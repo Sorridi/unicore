@@ -36,7 +36,6 @@ public class UniCore extends JavaPlugin {
 
         getConfig().set("mapper", toSave);
         saveConfig();
-        System.out.println(getConfig().getStringList("mapper"));
     }
 
 }

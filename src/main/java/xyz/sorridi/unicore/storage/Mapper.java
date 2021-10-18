@@ -17,7 +17,6 @@ public class Mapper {
         uniPlayerList = new ArrayList<>();
         List<String> configMapper = instance.getConfig().getStringList("mapper");
 
-        System.out.println(configMapper);
         for (String s : configMapper) {
             String[] stringSplit = s.split(" ");
             uniPlayerList.add(new UniPlayer(stringSplit[0], Boolean.parseBoolean(stringSplit[1]), Boolean.parseBoolean(stringSplit[2])));

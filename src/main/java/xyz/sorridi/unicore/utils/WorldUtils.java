@@ -14,11 +14,7 @@ import java.util.function.Function;
 public class WorldUtils {
 
     public static boolean isWood(Material material) {
-        for (Woods wood : Woods.values()) {
-            if (material == wood.getMaterial())
-                return true;
-        }
-        return false;
+        return Arrays.stream(Woods.values()).anyMatch(m -> material == m.getMaterial());
     }
 
     public static final Material[] axes = new Material[]
@@ -42,11 +38,7 @@ public class WorldUtils {
     }
 
     public static boolean isOre(Material material) {
-        for (Ores ore : Ores.values()) {
-            if (material == ore.getMaterial())
-                return true;
-        }
-        return false;
+        return Arrays.stream(Ores.values()).anyMatch(m -> material == m.getMaterial());
     }
 
     public static String getColor(Material material) {
