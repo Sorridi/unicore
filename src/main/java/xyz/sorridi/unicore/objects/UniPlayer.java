@@ -12,6 +12,8 @@ public class UniPlayer {
     private final String playerName;
 
     @Setter
-    private boolean treeCapitatorMode, veinMinerMode;
+    private boolean treeCapitatorMode, veinMinerMode, logged;
+
+    private String pin, lastIP;
 
 }

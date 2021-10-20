@@ -3,6 +3,7 @@ package xyz.sorridi.unicore.utils;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import xyz.sorridi.unicore.utils.enums.Ores;
 import xyz.sorridi.unicore.utils.enums.Woods;
@@ -62,6 +63,10 @@ public class WorldUtils {
                 if (function.apply(scannedMaterial) && scannedMaterial == block.getType() && !blockList.contains(scannedBlock))
                     breakBlocks(blockList, scannedBlock, function);
             }
+    }
+
+    public static String getPlayerCurrentIP(Player player) {
+        return player.getAddress() == null ? "" : player.getAddress().getHostName();
     }
 
 }

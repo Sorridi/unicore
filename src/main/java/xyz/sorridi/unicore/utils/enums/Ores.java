@@ -17,7 +17,7 @@ public enum Ores {
     LAPIS(Material.LAPIS_ORE, "&9"),
     COPPER(Material.COPPER_ORE, "&6"),
     QUARTZ(Material.NETHER_QUARTZ_ORE, "&f"),
-    QUARTZ_GOLD(Material.NETHER_GOLD_ORE, "&g"),
+    NETHER_GOLD(Material.NETHER_GOLD_ORE, "&e"),
     DEEPSLATE_COAL(Material.DEEPSLATE_COAL_ORE, "&8"),
     DEEPSLATE_IRON(Material.DEEPSLATE_IRON_ORE, "&7"),
     DEEPSLATE_GOLD(Material.DEEPSLATE_GOLD_ORE, "&e"),

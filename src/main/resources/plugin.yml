@@ -3,3 +3,6 @@ version: ${project.version}
 author: Sorridi
 main: xyz.sorridi.unicore.UniCore
 api-version: 1.13
+commands:
+  pin:
+    aliases: [login, l]
